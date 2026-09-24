@@ -1,2 +1,2 @@
 # Football-Squad-Builder
-Non UI squad suilder for football simulator 
+Terminal based squad-builder for football simulator 
