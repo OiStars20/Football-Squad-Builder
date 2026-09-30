@@ -3,5 +3,5 @@ enum class Leagues {
     LALIGA,
     BUNDESLIGA,
     SERIE_A,
-    LEAGUE_1
+    LIGUE_1
 }

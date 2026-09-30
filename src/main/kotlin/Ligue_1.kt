@@ -1,0 +1,18 @@
+enum class Ligue_1 : Leagues_Interface {
+    AJ_AUXERRE,
+    AS_MONACO,
+    FC_LORIENT,
+    FC_TOULOUSE,
+    LE_HAVRE_AC,
+    LOSC_LILLE,
+    OGC_NIZZA,
+    OLYMPIQUE_LYON,
+    OLYMPIQUE_MARSEILLE,
+    PARIS_FC,
+    PARIS_SAINT_GERMAIN,
+    RACING_STRASSBURG,
+    RC_LENS,
+    SCO_ANGERS,
+    STADE_BREST,
+    STADE_RENNES
+}

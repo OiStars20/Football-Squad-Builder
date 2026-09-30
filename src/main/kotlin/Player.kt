@@ -1,3 +1,4 @@
-class Player(val nation: Nations, val league: Leagues, val club: String, val name: String) {
+data class Player(
+    val nationality: Nations, val league: Leagues, val club: Leagues_Interface, val name: String) {
 
 }

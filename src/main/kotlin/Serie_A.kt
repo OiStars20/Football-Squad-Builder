@@ -1,0 +1,22 @@
+enum class Serie_A : Leagues_Interface {
+    ATALANTA,
+    BOLOGNA,
+    CAGLIARI_CALCIO,
+    COMO,
+    EMPOLI,
+    FIORENTINA,
+    GENOA,
+    AC_MAILAND,
+    INTER_MAILAND,
+    JUVENTUS_TURIN,
+    SS_LAZIO,
+    US_LECCE,
+    AC_MONZA,
+    SSC_NEAPEL,
+    PARMA_CALCIO,
+    AS_ROM,
+    FC_TORINO,
+    UDINESE_CALCIO,
+    VENEZIA,
+    HELLAS_VERONA
+}
