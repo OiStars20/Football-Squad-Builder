@@ -1,3 +1,5 @@
-class Field {
+class Field(
+    val formation: Formations
+) {
 
 }
