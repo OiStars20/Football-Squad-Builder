@@ -10,12 +10,25 @@ class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: 
         this.player = null
         hasPlayer = false
     }
-    fun increaseChemistry(chemistryPlus: Int){
-        if (chemistry + chemistryPlus >= 3){
-            chemistry = 3
+    fun increaseChemistryForNations(numPlayerProperty: Int){
+        if (numPlayerProperty <= 1){
+            return
         }
-        else{
-            chemistry = chemistry + chemistryPlus
+        if (numPlayerProperty in 2..4){
+            chemistry += 1
+            return
+        }
+        if (numPlayerProperty in 5..7){
+            chemistry += 2
+            return
+        }
+        if (numPlayerProperty == 8){
+            chemistry += 3
+        }
+    }
+    fun checkChemistry(){
+        if (chemistry > 3){
+            chemistry = 3
         }
     }
 }
