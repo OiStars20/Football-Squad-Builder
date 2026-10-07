@@ -26,6 +26,22 @@ class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: 
             chemistry += 3
         }
     }
+    fun increaseChemistryForLeagues(numPlayerProperty: Int){
+        if (numPlayerProperty <= 2){
+            return
+        }
+        if (numPlayerProperty in 3..4){
+            chemistry += 1
+            return
+        }
+        if (numPlayerProperty in 5..7){
+            chemistry += 2
+            return
+        }
+        if (numPlayerProperty == 8){
+            chemistry += 3
+        }
+    }
     fun checkChemistry(){
         if (chemistry > 3){
             chemistry = 3
