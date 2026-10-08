@@ -1,5 +1,5 @@
 class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: Int, var player: Player?) {
-    fun setPlayer(player: Player){
+    fun setPlayer(player: Player?){
         this.player = player
         this.hasPlayer = true
     }
@@ -10,7 +10,10 @@ class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: 
         this.player = null
         hasPlayer = false
     }
-    fun increaseChemistryForNations(numPlayerProperty: Int){
+    fun increaseChemistryForNations(numPlayerProperty: Int?){
+        if (numPlayerProperty == null){
+            return
+        }
         if (numPlayerProperty <= 1){
             return
         }
@@ -26,7 +29,10 @@ class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: 
             chemistry += 3
         }
     }
-    fun increaseChemistryForLeagues(numPlayerProperty: Int){
+    fun increaseChemistryForLeagues(numPlayerProperty: Int?){
+        if (numPlayerProperty == null){
+            return
+        }
         if (numPlayerProperty <= 2){
             return
         }
