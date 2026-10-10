@@ -206,7 +206,6 @@ object PlayerCollection {
         "Levi_Colwill" to Player(Nations.ENGLAND, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Levi Colwill"),
         "Reece_James" to Player(Nations.ENGLAND, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Reece James"),
         "Robert_Sanchez" to Player(Nations.SPAIN, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Robert Sanchez"),
-        "Cucurella" to Player(Nations.SPAIN, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Cucurella"),
         "Trevoh_Chalobah" to Player(Nations.ENGLAND, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Trevoh Chalobah"),
         "Pedro_Neto" to Player(Nations.PORTUGAL, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Pedro Neto"),
         "Joao_Pedro" to Player(Nations.BRAZIL, Leagues.PREMIER_LEAGUE, Premier_League.CHELSEA, "Joao Pedro"),
@@ -435,7 +434,6 @@ object PlayerCollection {
         "Biraghi" to Player(Nations.ITALIA, Leagues.SERIE_A, Serie_A.FC_TORINO, "Biraghi"),
 
 // ---------------- GENOA ----------------
-        "Vitinha" to Player(Nations.PORTUGAL, Leagues.SERIE_A, Serie_A.GENOA, "Vitinha"),
         "Norton_Cuffy" to Player(Nations.ENGLAND, Leagues.SERIE_A, Serie_A.GENOA, "Norton-Cuffy"),
         "Messias" to Player(Nations.BRAZIL, Leagues.SERIE_A, Serie_A.GENOA, "Messias"),
         "Marcandalli" to Player(Nations.ITALIA, Leagues.SERIE_A, Serie_A.GENOA, "Marcandalli"),

@@ -1,9 +1,9 @@
 class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: Int, var player: Player?) {
-    fun setPlayer(player: Player?){
+    fun setTheSelectedPlayer(player: Player?){
         this.player = player
         this.hasPlayer = true
     }
-    fun getPlayer(): Player{
+    fun getTheSelectedPlayer(): Player{
         return this.player!!
     }
     fun deleteplayer(){
