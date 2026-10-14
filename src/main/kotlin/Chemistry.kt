@@ -1,7 +1,10 @@
 class Chemistry {
-    lateinit var formations: Formations
-    var field: Field = Field(formations,0)
-    val players = field.formation.getPlayers()
+    lateinit var field: Field
+    lateinit var players: List<Player>
+    fun initalizePlayers(){
+        this.players = field.formation.getPlayers()
+    }
+
     fun getNationCounters() : MutableMap<Nations, Int>{
         val nationsCounter = mutableMapOf<Nations, Int>()
         var counter = 0

@@ -1,5 +1,5 @@
 object PlayerCollection {
-    val playerCollection = hashMapOf<String, Player>(
+    val playerCollection = hashMapOf(
         // Real Madrid
         "Mbappe" to Player(Nations.FRANCE, Leagues.LALIGA,LALIGA.REAL_MADRID,"Mbappe"),
         "Tchouameni" to Player(Nations.FRANCE, Leagues.LALIGA,LALIGA.REAL_MADRID,"Tchouameni"),

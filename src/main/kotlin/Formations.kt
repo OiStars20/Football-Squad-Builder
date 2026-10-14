@@ -181,11 +181,11 @@ sealed class Formations : GetPlayers {
         Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CAM,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CAM_2,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -202,15 +202,15 @@ sealed class Formations : GetPlayers {
     data class FourFiveOne2(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_1,false,0,null),
         Position(Positions.LB,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
+        Position(Positions.CM_3,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -227,15 +227,15 @@ sealed class Formations : GetPlayers {
     data class FiveTwoOneTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_1,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -252,14 +252,14 @@ sealed class Formations : GetPlayers {
     data class FiveTwoThree(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
         Position(Positions.RW,false,0,null),
-        Position(Positions.ST,false,0,null),
+        Position(Positions.ST_1,false,0,null),
         Position(Positions.LW,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
@@ -277,15 +277,15 @@ sealed class Formations : GetPlayers {
     data class FiveThreeTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -302,15 +302,15 @@ sealed class Formations : GetPlayers {
     data class FiveFourOne(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.LB,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -326,16 +326,16 @@ sealed class Formations : GetPlayers {
     }
     data class ThreeOneFourTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -351,16 +351,16 @@ sealed class Formations : GetPlayers {
     }
     data class ThreeFourTwoOne(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.CAM,false,0,null)
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.CAM_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -376,15 +376,15 @@ sealed class Formations : GetPlayers {
     }
     data class ThreeFourThree(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
         Position(Positions.LM,false,0,null),
         Position(Positions.RW,false,0,null),
-        Position(Positions.ST,false,0,null),
+        Position(Positions.ST_1,false,0,null),
         Position(Positions.LW,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
@@ -401,16 +401,16 @@ sealed class Formations : GetPlayers {
     }
     data class ThreeFiveTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
+        Position(Positions.CB_3,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.CDM,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.CDM_2,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -427,15 +427,15 @@ sealed class Formations : GetPlayers {
     data class FourOneTwoOneTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CDM,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -452,15 +452,15 @@ sealed class Formations : GetPlayers {
     data class FourOneTwoOneTwo2(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -477,15 +477,15 @@ sealed class Formations : GetPlayers {
     data class FourOneThreeTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CDM,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -502,14 +502,14 @@ sealed class Formations : GetPlayers {
     data class FourTwoOneThree(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CAM,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CDM_2,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
         Position(Positions.RW,false,0,null),
-        Position(Positions.ST,false,0,null),
+        Position(Positions.ST_1,false,0,null),
         Position(Positions.LW,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
@@ -527,15 +527,15 @@ sealed class Formations : GetPlayers {
     data class FourTwoTwoTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CDM_2,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.CAM_2,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -552,15 +552,15 @@ sealed class Formations : GetPlayers {
     data class FourTwoThreeOne(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CDM_2,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.CAM_2,false,0,null),
+        Position(Positions.CAM_3,false,0,null),
+        Position(Positions.ST_1,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -577,15 +577,15 @@ sealed class Formations : GetPlayers {
     data class FourTwoThreeOne2(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CDM,false,0,null),
-        Position(Positions.CDM,false,0,null),
+        Position(Positions.CDM_1,false,0,null),
+        Position(Positions.CDM_2,false,0,null),
         Position(Positions.RM,false,0,null),
-        Position(Positions.CAM,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
         Position(Positions.LM,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.ST_1,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -602,14 +602,14 @@ sealed class Formations : GetPlayers {
     data class FourTwoFour(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
         Position(Positions.RW,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null),
         Position(Positions.LW,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
@@ -627,15 +627,15 @@ sealed class Formations : GetPlayers {
     data class FourThreeOneTwo(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.ST,false,0,null)
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
+        Position(Positions.CM_3,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.ST_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()
@@ -652,15 +652,15 @@ sealed class Formations : GetPlayers {
     data class FourThreeTwoOne(val formationPositions: List<Position> = listOf<Position>(
         Position(Positions.GK,false,0,null),
         Position(Positions.RB,false,0,null),
-        Position(Positions.CB,false,0,null),
-        Position(Positions.CB,false,0,null),
+        Position(Positions.CB_1,false,0,null),
+        Position(Positions.CB_2,false,0,null),
         Position(Positions.LB,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CM,false,0,null),
-        Position(Positions.CAM,false,0,null),
-        Position(Positions.ST,false,0,null),
-        Position(Positions.CAM,false,0,null)
+        Position(Positions.CM_1,false,0,null),
+        Position(Positions.CM_2,false,0,null),
+        Position(Positions.CM_3,false,0,null),
+        Position(Positions.CAM_1,false,0,null),
+        Position(Positions.ST_1,false,0,null),
+        Position(Positions.CAM_2,false,0,null)
     )) : Formations(){
         override fun getPlayers(): List<Player>{
             val playerList = mutableListOf<Player>()

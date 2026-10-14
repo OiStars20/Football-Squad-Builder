@@ -1,7 +1,7 @@
 fun main() {
     var continueApplication = true
     while (continueApplication) {
-        val formationsMap = mutableMapOf<String, Formations>(
+        val formationsMap = mutableMapOf(
             "433" to Formations.FourThreeThree(),
             "433(2)" to Formations.FourThreeThree2(),
             "433(3)" to Formations.FourThreeThree3(),
@@ -19,6 +19,7 @@ fun main() {
             "3142" to Formations.ThreeOneFourTwo(),
             "343" to Formations.ThreeFourThree(),
             "352" to Formations.ThreeFiveTwo(),
+            "3421" to Formations.ThreeFourTwoOne(),
             "41212" to Formations.FourOneTwoOneTwo(),
             "41212(2)" to Formations.FourOneTwoOneTwo2(),
             "4132" to Formations.FourOneThreeTwo(),
@@ -29,19 +30,27 @@ fun main() {
             "424" to Formations.FourTwoFour(),
             "4312" to Formations.FourThreeOneTwo()
         )
-        val positionsMap = mapOf<String, Positions>(
+        val positionsMap = mapOf(
             "GK" to Positions.GK,
             "RB" to Positions.RB,
-            "CB" to Positions.CB,
+            "CB_1" to Positions.CB_1,
+            "CB_2" to Positions.CB_2,
+            "CB_3" to Positions.CB_3,
             "LB" to Positions.LB,
-            "CDM" to Positions.CDM,
-            "CM" to Positions.CM,
-            "CAM" to Positions.CAM,
+            "CDM_1" to Positions.CDM_1,
+            "CDM_2" to Positions.CDM_2,
+            "CM_1" to Positions.CM_1,
+            "CM_2" to Positions.CM_2,
+            "CM_3" to Positions.CM_3,
+            "CAM_1" to Positions.CAM_1,
+            "CAM_2" to Positions.CAM_2,
+            "CAM_3" to Positions.CAM_3,
             "RM" to Positions.RM,
             "LM" to Positions.LM,
             "RW" to Positions.RW,
             "LW" to Positions.LW,
-            "ST" to Positions.ST,
+            "ST_1" to Positions.ST_1,
+            "ST_2" to Positions.ST_2
         )
         println("Welcome to Football-Squad-Builder")
         println("What formation would you like to use for your squad?")
@@ -50,7 +59,7 @@ fun main() {
         println("442, 442(2), 451,")
         println("451(2), 5212, 523,")
         println("532, 541, 3142,")
-        println("3412, 343, 352,")
+        println("3412, 343, 352, 3421")
         println("41212, 41212(2), 4132,")
         println("4213, 4222, 4231,")
         println("4231(2), 424, 4312")
@@ -68,10 +77,13 @@ fun main() {
         val f = Field(selectedFormation, 0)
         println("Please select a position where you haven't selected any player yet")
         var i = 0
+        val positionsOfSelectedFormation = mutableSetOf<String>()
+        for (position in selectedFormation.getPositions()){
+            val positionString = position.positions.toString()
+            positionsOfSelectedFormation.add(positionString)
+        }
         while (i < 11) {
-            println("GK, RB, LB, CB,")
-            println("CDM, CM, CAM, RM, LM,")
-            println("RW, LW, ST")
+            positionsOfSelectedFormation.forEach { println(it) }
             val position = readln()
             if (position in positionsMap) {
                 val p = f.formation.getPositions().find {
@@ -86,17 +98,20 @@ fun main() {
                             if (player in PlayerCollection.playerCollection) {
                                 playerSelected = true
                                 p.setTheSelectedPlayer(PlayerCollection.playerCollection[player])
+                                positionsOfSelectedFormation.remove(p.positions.toString())
                             } else {
                                 println("Invalid player selected")
                             }
                         }
                     }
                 }
+                i++
             }
-            i++
+
         }
         val c = Chemistry()
         c.field = f
+        c.initalizePlayers()
         val nationsList = c.getNationCounters()
         val leaguesList = c.getLeagueCounters()
         for (p in f.formation.getPlayers()) {
@@ -116,7 +131,7 @@ fun main() {
         f.chemistry = chemistry
         println(
             "Your final squad has the ${
-            formationsMap.entries.firstOrNull() {
+            formationsMap.entries.firstOrNull {
                 it.value == f.formation
             }?.key
         } with the following players ${
