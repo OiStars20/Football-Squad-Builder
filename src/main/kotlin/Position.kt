@@ -25,7 +25,7 @@ class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: 
             chemistry += 2
             return
         }
-        if (numPlayerProperty == 8){
+        if (numPlayerProperty >= 8){
             chemistry += 3
         }
     }
@@ -44,7 +44,7 @@ class Position(val positions: Positions, var hasPlayer: Boolean, var chemistry: 
             chemistry += 2
             return
         }
-        if (numPlayerProperty == 8){
+        if (numPlayerProperty >= 8){
             chemistry += 3
         }
     }
